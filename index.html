@@ -158,7 +158,7 @@
   .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   @media (max-width: 720px) { .proj-grid { grid-template-columns: 1fr; } }
   .card { position: relative; padding: 32px; border-radius: 18px; background: var(--card); border: 1px solid var(--border); overflow: hidden; transition: transform 0.15s ease-out, box-shadow 0.3s; transform-style: preserve-3d; }
-  .card::before { content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity 0.3s; background: radial-gradient(500px circle at var(--mx, 50%) var(--my, 50%), rgba(108,92,247,0.14), transparent 40%); }
+  .card::before { content: ''; pointer-events: none; position: absolute; inset: 0; opacity: 0; transition: opacity 0.3s; background: radial-gradient(500px circle at var(--mx, 50%) var(--my, 50%), rgba(108,92,247,0.14), transparent 40%); }
   .card:hover::before { opacity: 1; }
   .card:hover { box-shadow: 0 24px 60px -24px var(--glow); border-color: rgba(108,92,247,0.4); }
   .card .tag { display: inline-block; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-2); margin-bottom: 12px; }
